@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Automoblox — Originals</title>
+
+  <!-- reset-ish (small) -->
+  <link rel="stylesheet" href="css/reset.css">
+
+  <!-- bootstrap (used for carousel & grid) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- mavbar (sticky) -->
+  <header class="site-header fixed-top">
+    <nav class="navbar container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand d-flex align-items-center gap-2">
+        <img src="images/automoblox_logo.jpg" alt="Automoblox logo" class="brand-logo">
+        <span class="brand-name">Automoblox</span>
+      </a>
+
+      <ul class="nav-links list-unstyled d-flex gap-2 m-0">
+        <li><a class="nav-btn" href="pages/shop.html">Shop</a></li>
+        <li><a class="nav-btn" href="pages/about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-5 mt-5">
+    <!-- hero )carousel) -->
+    <section class="hero container py-4">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <!-- indi -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <a href="pages/car-c9.html" class="d-block w-100 carousel-link">
+              <img src="images/cars/c9.png" class="d-block w-100 hero-img" alt="C9 Sportscar">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>C9 Sportscar</h2>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <a href="pages/car-s9.html" class="d-block w-100 carousel-link">
+              <img src="images/cars/s9.png" class="d-block w-100 hero-img" alt="S9 Sedan">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>S9 Sedan</h2>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <a href="pages/car-t9.html" class="d-block w-100 carousel-link">
+              <img src="images/cars/t9.png" class="d-block w-100 hero-img" alt="T9 Truck">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>T9 Truck</h2>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <a href="pages/car-m9.html" class="d-block w-100 carousel-link">
+              <img src="images/cars/m9.png" class="d-block w-100 hero-img" alt="M9 Mini">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>M9 Mini</h2>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <a href="pages/car-x9.html" class="d-block w-100 carousel-link">
+              <img src="images/cars/x9.png" class="d-block w-100 hero-img" alt="X9 SUV">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>X9 SUV</h2>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- featured thumbnails tease -->
+    <section class="container py-5">
+      <h3 class="section-title">Explore the collection</h3>
+
+      <div class="row g-3 mt-3">
+        <div class="col-6 col-md-4 col-lg-2">
+          <a class="thumb" href="pages/car-c9.html">
+            <img src="images/cars/c9.png" alt="C9" class="thumb-img">
+            <p class="thumb-caption">C9</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a class="thumb" href="pages/car-s9.html">
+            <img src="images/cars/s9.png" alt="S9" class="thumb-img">
+            <p class="thumb-caption">S9</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a class="thumb" href="pages/car-t9.html">
+            <img src="images/cars/t9.png" alt="T9" class="thumb-img">
+            <p class="thumb-caption">T9</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a class="thumb" href="pages/car-m9.html">
+            <img src="images/cars/m9.png" alt="M9" class="thumb-img">
+            <p class="thumb-caption">M9</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a class="thumb" href="pages/car-x9.html">
+            <img src="images/cars/x9.png" alt="X9" class="thumb-img">
+            <p class="thumb-caption">X9</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small class="muted">&copy; <span id="year">2025</span> Automoblox — Student Redesign</small>
+      <nav class="foot-nav">
+        <a href="pages/about.html">About</a>
+        <a href="pages/shop.html" class="ms-3">Shop</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and custom script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
