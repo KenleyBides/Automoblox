@@ -133,3 +133,127 @@ body{
   .nav-links .nav-btn { padding: 6px 10px; }
   .thumb-img { height: 100px; }
 }
+
+/* accents */
+
+/* --------------------------
+   RED ACCENTS / NEW STYLES
+--------------------------- */
+
+/* Accent underline for section titles */
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 42%;
+  height: 3px;
+  background: var(--accent-red);
+  border-radius: 2px;
+}
+
+/* Red hover glow on hero image */
+.hero .hero-img:hover {
+  box-shadow: 0 12px 32px rgba(196, 0, 0, 0.18);
+}
+
+/* Navigation button – add red highlight on active page */
+.nav-links .nav-btn.active {
+  background: var(--accent-red);
+}
+.nav-links .nav-btn.active:hover {
+  background: #9b0000;
+}
+
+/* Underline link hover accent */
+a:hover {
+  color: var(--accent-red);
+}
+
+/* Thumbnail hover ring */
+.thumb:hover .thumb-img {
+  box-shadow: 0 10px 22px rgba(196, 0, 0, 0.20);
+  border: 2px solid rgba(196, 0, 0, 0.15);
+}
+
+/* Text accent */
+.highlight-red {
+  color: var(--accent-red);
+  font-weight: 700;
+}
+
+/* Red call-to-action button (optional class) */
+.btn-red {
+  background: var(--accent-red) !important;
+  color: #fff !important;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .2s ease, transform .15s ease;
+}
+.btn-red:hover {
+  background: #9b0000 !important;
+  transform: translateY(-2px);
+}
+
+/* Carousel caption – add soft red gradient glow */
+.carousel-caption h2 {
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+  );
+  box-shadow: 0 0 20px rgba(196,0,0,0.25);
+}
+
+/* Footer accent border */
+.site-footer {
+  border-top: 3px solid rgba(196, 0, 0, 0.25);
+}
+
+/* Subtle red border on hoverable elements */
+.nav-links .nav-btn:hover {
+  box-shadow: 0 0 0 2px rgba(196,0,0,0.25);
+}
+
+/* custom glow override */
+/* C9 – Red Glow */
+.thumb-img[alt="C9"]:hover {
+  box-shadow:
+    0 12px 26px rgba(0,0,0,0.12),
+    0 0 22px rgba(196,0,0,0.45);
+}
+
+/* S9 – Blue Glow */
+.thumb-img[alt="S9"]:hover {
+  box-shadow:
+    0 12px 26px rgba(0,0,0,0.12),
+    0 0 22px rgba(0,85,255,0.45);
+}
+
+/* T9 – Green Glow */
+.thumb-img[alt="T9"]:hover {
+  box-shadow:
+    0 12px 26px rgba(0,0,0,0.12),
+    0 0 22px rgba(0,180,0,0.45);
+}
+
+/* M9 – Light Blue Glow */
+.thumb-img[alt="M9"]:hover {
+  box-shadow:
+    0 12px 26px rgba(0,0,0,0.12),
+    0 0 22px rgba(0,200,255,0.45);
+}
+
+/* X9 – Purple Glow */
+.thumb-img[alt="X9"]:hover {
+  box-shadow:
+    0 12px 26px rgba(0,0,0,0.12),
+    0 0 22px rgba(150,0,255,0.45);
+}
