@@ -203,3 +203,56 @@ body {
   .about-title { font-size: 2rem; }
   .about-image { margin-bottom: 20px; }
 }
+
+.car-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -.5px;
+}
+
+.car-underline {
+  width: 70px;
+  height: 4px;
+  background: var(--accent-red);
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.car-image-wrapper {
+  background: #fff;
+  padding: 26px;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.car-image-wrapper:hover {
+  transform: scale(1.02);
+}
+
+/* image glow variations */
+.glow-red:hover { box-shadow: 0 0 32px rgba(196,0,0,0.35); }
+.glow-blue:hover { box-shadow: 0 0 32px rgba(0,85,255,0.35); }
+.glow-green:hover { box-shadow: 0 0 32px rgba(0,180,0,0.35); }
+.glow-cyan:hover { box-shadow: 0 0 32px rgba(0,200,255,0.35); }
+.glow-purple:hover { box-shadow: 0 0 32px rgba(150,0,255,0.35); }
+
+.car-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* specs card */
+.spec-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+}
+.spec-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.spec-list {
+  padding-left: 20px;
+  color: var(--muted);
+}
