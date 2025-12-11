@@ -5,18 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Automoblox — Originals</title>
 
-  <!-- reset-ish (small) -->
   <link rel="stylesheet" href="css/reset.css">
-
-  <!-- bootstrap (used for carousel & grid) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- custom styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- mavbar (sticky) -->
+  <!-- navbar -->
   <header class="site-header fixed-top">
     <nav class="navbar container d-flex align-items-center justify-content-between">
       <a href="index.html" class="brand d-flex align-items-center gap-2">
@@ -31,80 +26,88 @@
   </header>
 
   <main class="pt-5 mt-5">
-    <!-- hero )carousel) -->
-    <section class="hero container py-4">
-      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-        <!-- indi -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+
+    <!-- static hero -->
+    <section class="hero-static container py-5">
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold mb-3">Automoblox Originals</h1>
+          <p class="muted mb-4" style="max-width: 540px;">
+            A premium line of modular wooden vehicles that merge modern design
+            with heirloom craftsmanship. Built to collect, customize, and last.
+          </p>
+          <a href="pages/shop.html" class="nav-btn d-inline-block mt-2">Explore the Shop</a>
         </div>
 
-        <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <a href="pages/car-c9.html" class="d-block w-100 carousel-link">
-              <img src="images/cars/c9_large.jpg" class="d-block w-100 hero-img" alt="C9 Sportscar">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-              <h2>C9 Sportscar</h2>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <a href="pages/car-s9.html" class="d-block w-100 carousel-link">
-              <img src="images/cars/s9_large.jpg" class="d-block w-100 hero-img" alt="S9 Sedan">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-              <h2>S9 Sedan</h2>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <a href="pages/car-t9.html" class="d-block w-100 carousel-link">
-              <img src="images/cars/t9_large.jpg" class="d-block w-100 hero-img" alt="T9 Truck">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-              <h2>T9 Truck</h2>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <a href="pages/car-m9.html" class="d-block w-100 carousel-link">
-              <img src="images/cars/m9_large.jpg" class="d-block w-100 hero-img" alt="M9 Mini">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-              <h2>M9 Mini</h2>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <a href="pages/car-x9.html" class="d-block w-100 carousel-link">
-              <img src="images/cars/x9_large.jpg" class="d-block w-100 hero-img" alt="X9 SUV">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-              <h2>X9 SUV</h2>
-            </div>
-          </div>
-
+        <div class="col-lg-6 text-center">
+          <img src="images/cars/c9_large.jpg" class="w-100 rounded-3 shadow-sm hero-image" alt="Featured Automoblox">
         </div>
 
-        <!-- controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
-    <!-- featured thumbnails tease -->
+    <!-- tagline intro -->
+    <section class="container py-5 text-center">
+      <h2 class="fw-bold fs-2">Premium Wooden Vehicles. Built to Last.</h2>
+      <p class="muted mx-auto" style="max-width: 600px;">
+        Automoblox blends craftsmanship with modern modular design—allowing every vehicle to be rebuilt, 
+        customized, and collected.
+      </p>
+    </section>
+
+    <!-- featured highlight -->
+    <section class="featured-highlight container py-5">
+      <div class="row align-items-center">
+
+        <div class="col-lg-6 mb-3 mb-lg-0">
+          <img src="images/cars/x9_large.jpg" class="w-100 rounded-3 shadow-sm" alt="Featured Model">
+        </div>
+
+        <div class="col-lg-6">
+          <h3 class="fw-bold">Every Model, A Personality</h3>
+          <p class="muted">
+            Whether it’s the sleek C9 sportscar or the rugged X9 SUV, each Automoblox model carries
+            its own identity expressed through form, color, and modular components.
+          </p>
+          <a href="pages/shop.html" class="nav-btn mt-2 d-inline-block">Browse Models</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- values grid -->
+    <section class="container py-5">
+      <div class="row text-center g-4">
+        <div class="col-6 col-lg-3">
+          <h4 class="fw-bold">Crafted</h4>
+          <p class="muted small">Premium beechwood bodies with long-lasting durability.</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="fw-bold">Modular</h4>
+          <p class="muted small">Interchangeable parts for endless creativity.</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="fw-bold">Collectible</h4>
+          <p class="muted small">Five signature models with distinct personalities.</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="fw-bold">Designed</h4>
+          <p class="muted small">Minimal aesthetics that modernize a classic idea.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- color bar -->
+    <section class="model-color-bar">
+      <div class="bar blue"></div>
+      <div class="bar red"></div>
+      <div class="bar green"></div>
+      <div class="bar cyan"></div>
+      <div class="bar purple"></div>
+    </section>
+
+    <!-- explore collection -->
     <section class="container py-5">
       <h3 class="section-title">Explore the collection</h3>
 
@@ -148,12 +151,9 @@
   <footer class="site-footer py-4">
     <div class="container d-flex justify-content-between align-items-center">
       <small class="muted">&copy; <span id="year">2025</span> Automoblox — Kenley Bides Redesign</small>
-      <nav class="foot-nav">
-      </nav>
     </div>
   </footer>
 
-  <!-- Bootstrap JS and custom script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
